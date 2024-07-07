@@ -16,7 +16,10 @@ struct HomeView: View {
         Button("LogOut") {
         try? Auth.auth().signOut()
         }
+        
+        
     }
+    
 }
 
 #Preview {
