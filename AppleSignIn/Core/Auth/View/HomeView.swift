@@ -1,24 +1,25 @@
 //
-//  SettingsView.swift
+//  HomeView.swift
 //  AppleSignIn
 //
-//  Created by Benji Loya on 06.07.2024.
+//  Created by Benji Loya on 30.06.2024.
 //
 
 import SwiftUI
+import Firebase
 
-struct SettingsView: View {
-    
+struct HomeView: View {
     @StateObject private var viewModel = SettingsViewModel()
-    @Binding var showSignInView: Bool
-    
+    /// User Log Status
+    @AppStorage("log_Status") private var logStatus: Bool = false
     var body: some View {
-        List {
+        
+        VStack(spacing: 50) {
             Button("Log out") {
                 Task {
                     do {
                         try viewModel.signOut()
-                        showSignInView = true
+                        logStatus = false
                     } catch {
                         print(error)
                     }
@@ -29,7 +30,7 @@ struct SettingsView: View {
                 Task {
                     do {
                         try await viewModel.deleteAccount()
-                        showSignInView = true
+                        logStatus = false
                     } catch {
                         print(error)
                     }
@@ -37,22 +38,16 @@ struct SettingsView: View {
             } label: {
                 Text("Delete account")
             }
-
-            
-           
         }
         .onAppear {
             viewModel.loadAuthProviders()
             viewModel.loadAuthUser()
         }
-        .navigationBarTitle("Settings")
+        
     }
+    
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            SettingsView(showSignInView: .constant(false))
-        }
-    }
+#Preview {
+    HomeView()
 }

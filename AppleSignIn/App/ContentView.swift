@@ -15,7 +15,7 @@ struct ContentView: View {
             HomeView()
                 .accentColor(.primary)
         } else {
-            Login()
+            LoginView()
         }
     }
 }

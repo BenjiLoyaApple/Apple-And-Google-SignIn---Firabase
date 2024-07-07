@@ -27,8 +27,8 @@ struct SignInWithAppleButtonViewRepresentable: UIViewRepresentable {
 struct SignInWithAppleResult {
     let token: String
     let nonce: String
-//    let name: String?
-//    let email: String?
+    let name: String?
+    let email: String?
 }
 
 @MainActor
@@ -128,7 +128,6 @@ final class SignInAppleHelper: NSObject {
       return String(nonce)
     }
     
-
     private func sha256(_ input: String) -> String {
       let inputData = Data(input.utf8)
       let hashedData = SHA256.hash(data: inputData)
@@ -152,11 +151,10 @@ extension SignInAppleHelper: ASAuthorizationControllerDelegate {
             completionHandler?(.failure(URLError(.badServerResponse)))
             return
         }
-     //   let name = appleIDCredential.fullName?.givenName
-     //   let email = appleIDCredential.email
+        let name = appleIDCredential.fullName?.givenName
+        let email = appleIDCredential.email
 
-//        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce, name: name, email: email)
-        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce)
+        let tokens = SignInWithAppleResult(token: idTokenString, nonce: nonce, name: name, email: email)
 
         completionHandler?(.success(tokens))
     }

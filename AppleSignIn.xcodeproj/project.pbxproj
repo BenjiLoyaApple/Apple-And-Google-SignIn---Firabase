@@ -14,16 +14,13 @@
 		E42DFCAD2C3920630040590E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCAC2C3920630040590E /* AuthenticationManager.swift */; };
 		E42DFCB12C3998340040590E /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCB02C3998340040590E /* SignInGoogleHelper.swift */; };
 		E42DFCB52C399C520040590E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCB42C399C520040590E /* SettingsViewModel.swift */; };
-		E42DFCB72C399CB20040590E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCB62C399CB20040590E /* SettingsView.swift */; };
-		E42DFCB92C39A05F0040590E /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCB82C39A05F0040590E /* AuthenticationView.swift */; };
 		E42DFCBB2C39A1910040590E /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCBA2C39A1910040590E /* SignInAppleHelper.swift */; };
-		E42DFCBD2C39C95B0040590E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DFCBC2C39C95B0040590E /* RootView.swift */; };
 		E42DFCC32C39EDD00040590E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E42DFCC22C39EDD00040590E /* GoogleService-Info.plist */; };
 		E4FA16F42C31C98E000D4C63 /* AppleSignInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA16F32C31C98E000D4C63 /* AppleSignInApp.swift */; };
 		E4FA16F62C31C98E000D4C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA16F52C31C98E000D4C63 /* ContentView.swift */; };
 		E4FA16F82C31C98F000D4C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA16F72C31C98F000D4C63 /* Assets.xcassets */; };
 		E4FA16FB2C31C98F000D4C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA16FA2C31C98F000D4C63 /* Preview Assets.xcassets */; };
-		E4FA17042C31C9C3000D4C63 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA17032C31C9C3000D4C63 /* Login.swift */; };
+		E4FA17042C31C9C3000D4C63 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA17032C31C9C3000D4C63 /* LoginView.swift */; };
 		E4FA17072C31CA08000D4C63 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E4FA17062C31CA08000D4C63 /* FirebaseAuth */; };
 		E4FA170A2C31CA9B000D4C63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA17092C31CA9B000D4C63 /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -35,17 +32,14 @@
 		E42DFCAC2C3920630040590E /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		E42DFCB02C3998340040590E /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		E42DFCB42C399C520040590E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		E42DFCB62C399CB20040590E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		E42DFCB82C39A05F0040590E /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		E42DFCBA2C39A1910040590E /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
-		E42DFCBC2C39C95B0040590E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E42DFCC22C39EDD00040590E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4FA16F02C31C98E000D4C63 /* AppleSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA16F32C31C98E000D4C63 /* AppleSignInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInApp.swift; sourceTree = "<group>"; };
 		E4FA16F52C31C98E000D4C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4FA16F72C31C98F000D4C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4FA16FA2C31C98F000D4C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E4FA17032C31C9C3000D4C63 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E4FA17032C31C9C3000D4C63 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E4FA17082C31CA17000D4C63 /* AppleSignIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleSignIn.entitlements; sourceTree = "<group>"; };
 		E4FA17092C31CA9B000D4C63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +63,6 @@
 			children = (
 				E4FA16F32C31C98E000D4C63 /* AppleSignInApp.swift */,
 				E4FA16F52C31C98E000D4C63 /* ContentView.swift */,
-				E42DFCBC2C39C95B0040590E /* RootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -78,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				E42DFCB32C3998490040590E /* Auth */,
-				E42DFCB22C3998380040590E /* View */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -94,10 +86,8 @@
 		E42DFCB22C3998380040590E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E42DFCB82C39A05F0040590E /* AuthenticationView.swift */,
-				E42DFCB62C399CB20040590E /* SettingsView.swift */,
 				E4FA17092C31CA9B000D4C63 /* HomeView.swift */,
-				E4FA17032C31C9C3000D4C63 /* Login.swift */,
+				E4FA17032C31C9C3000D4C63 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,13 +95,38 @@
 		E42DFCB32C3998490040590E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				E42DFCAC2C3920630040590E /* AuthenticationManager.swift */,
-				E42DFCA72C391B440040590E /* AuthenticationViewModel.swift */,
-				E42DFCB42C399C520040590E /* SettingsViewModel.swift */,
-				E42DFCB02C3998340040590E /* SignInGoogleHelper.swift */,
-				E42DFCBA2C39A1910040590E /* SignInAppleHelper.swift */,
+				E42DFCB22C3998380040590E /* View */,
+				E42DFCC82C3ADC790040590E /* ViewModel */,
+				E42DFCC72C3ADC630040590E /* Helpers */,
+				E42DFCC62C3ADC570040590E /* Manager */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E42DFCC62C3ADC570040590E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E42DFCAC2C3920630040590E /* AuthenticationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E42DFCC72C3ADC630040590E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E42DFCBA2C39A1910040590E /* SignInAppleHelper.swift */,
+				E42DFCB02C3998340040590E /* SignInGoogleHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E42DFCC82C3ADC790040590E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E42DFCB42C399C520040590E /* SettingsViewModel.swift */,
+				E42DFCA72C391B440040590E /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E4FA16E72C31C98E000D4C63 = {
@@ -234,15 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42DFCB12C3998340040590E /* SignInGoogleHelper.swift in Sources */,
-				E4FA17042C31C9C3000D4C63 /* Login.swift in Sources */,
-				E42DFCB92C39A05F0040590E /* AuthenticationView.swift in Sources */,
+				E4FA17042C31C9C3000D4C63 /* LoginView.swift in Sources */,
 				E4FA170A2C31CA9B000D4C63 /* HomeView.swift in Sources */,
 				E42DFCAD2C3920630040590E /* AuthenticationManager.swift in Sources */,
 				E4FA16F62C31C98E000D4C63 /* ContentView.swift in Sources */,
-				E42DFCB72C399CB20040590E /* SettingsView.swift in Sources */,
 				E4FA16F42C31C98E000D4C63 /* AppleSignInApp.swift in Sources */,
 				E42DFCBB2C39A1910040590E /* SignInAppleHelper.swift in Sources */,
-				E42DFCBD2C39C95B0040590E /* RootView.swift in Sources */,
 				E42DFCAA2C391D7F0040590E /* Utilites.swift in Sources */,
 				E42DFCA82C391B440040590E /* AuthenticationViewModel.swift in Sources */,
 				E42DFCB52C399C520040590E /* SettingsViewModel.swift in Sources */,
